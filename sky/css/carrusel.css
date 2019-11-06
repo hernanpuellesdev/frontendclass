@@ -2,12 +2,26 @@
             max-width: 100%;
             margin: 0 auto;
             display: flex;
+            position: relative;
+            top: -300px;
+
+
         }
         #imagen {
             width: 100%;
             height: 400px;
             background-size: cover;
+
         }
+        .carousel2 {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            position: absolute;
+
+        }
+
+
 
         a:link{
 
