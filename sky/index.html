@@ -37,19 +37,6 @@
 </table>
 
 
-<!--
-    <div class="carousel">
-        <button id="retroceder">Retroceder</button>
-        <div id="imagen"></div>
-        <button id="avanzar">Avanzar</button>
-    </div>
-
-        <div class="controles">
-        <button id="play">Play</button>
-        <button id="stop" disabled>Stop</button>
-    </div> 
--->
- 
 
     <div class="carousel">
         <button class="button button" id="retroceder">Retroceder</button>
@@ -153,7 +140,7 @@ div {
     <label for="organization"><span></span>Ida y Vuelta</label>
 
     <input id="organization" type="radio" name="user" value="Organization">
-    <label for="organization"><span></span>Multitramo</label>
+    <label for="organization"><span></span>Multitramo</label><br><br>
 
     <label for="Desde">Desde</label><br>
     <select id="country" name="country">
@@ -168,9 +155,19 @@ div {
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select><br>  
-    <input type="submit" value="Submit">
+    <input type="hidden" onclick="myFunction()" class="button button" type="submit" value="Comprar">
+    
+
   </form>
 </div>
+
+ <button onclick="myFunction()" class="button button">Viaje gratis</button>
+
+<script>
+function myFunction() {
+  alert("Intentelo mas tarde");
+}
+</script>
 
     <!-- archivos js -->
     <script src="js/carrusel.js"></script>
