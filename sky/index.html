@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+ <meta charset="utf-8"> 
+ <link type="text/css" rel="stylesheet" href="css/carrusel.css">
+
+
+</head>
+
+<body>
+
+<table bgcolor="green" style="width:100%; border: 2x solid green;">
+  <tr>
+    <th ></th>
+   </tr>
+
+</table>
+
+<table style="width:100%">
+  <tr>
+    <th><img src="images/logo.png" width="100" height="40" class="d-inline-block align-top rounded" alt="hola"></th>
+    <th><a href="https://www.skyairline.com/chile">Planificatu viaje</a></th>
+    <th><strong style="color:#636";>Administra tu vuelo </strong></th>
+    <th><strong style="color:#636";>Check-In </strong></th>
+	<th><img src="images/login.png" width=355 height="78" class="d-inline-block align-top rounded" alt="logo"></th>
+
+   </tr>
+
+</table>
+
+<table bgcolor="green" style="width:100%">
+  <tr>
+    <th style="color:white">Si deseas hacer compras con factura, debes realizar a través del Portal Empresa</th>
+
+   </tr>
+</table>
+
+
+<!--
+    <div class="carousel">
+        <button id="retroceder">Retroceder</button>
+        <div id="imagen"></div>
+        <button id="avanzar">Avanzar</button>
+    </div>
+
+        <div class="controles">
+        <button id="play">Play</button>
+        <button id="stop" disabled>Stop</button>
+    </div> 
+-->
+        <div class="controles">
+        <button id="play">Play</button>
+        <button id="stop" disabled>Stop</button>
+    </div> 
+
+    <div class="carousel">
+        <button id="retroceder">Retroceder</button>
+        <div id="imagen"> <button id="avanzar">Avanzar</button>
+		</div>
+    </div>
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3><strong style="color:#636";>Vuelos</strong></h3>
+
+<div>
+  <form  action="/action_page.php">
+
+    <label for="country">Desde</label>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+
+    <label for="country">Hacia</label>
+    <select id="country" name="country">         
+    <option value="usa">USA</option>
+
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+    <!-- archivos js -->
+    <script src="js/carrusel.js"></script>
+</body>
+</html>
